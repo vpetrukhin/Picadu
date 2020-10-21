@@ -2,6 +2,7 @@
 .header {
   background: #FA8C16;
   padding: 16px 0;
+  box-shadow:0px 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .header__wrapper {
@@ -54,3 +55,31 @@
 background-color: #fff;
 cursor: pointer;
 }
+/* обертка */
+.wrapper {}
+/* MAin*/
+.posts {}
+
+.post {}
+
+.post__title {}
+
+.post__text {}
+
+.post__tags {}
+
+.post__tag {}
+
+.post__footer {}
+
+.post__btns {}
+
+.post__author {}
+
+.post__author-info {}
+
+.post__author-nikname {}
+
+.post__author-last-in {}
+
+.post__author-ava {}
