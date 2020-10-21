@@ -1,8 +1,14 @@
+body{
+  background-color: #E5E5E5;
+  font-family: Roboto, sans-serif;
+}
+
 /* header */
 .header {
   background: #FA8C16;
   padding: 16px 0;
   box-shadow:0px 2px 8px rgba(0, 0, 0, 0.15);
+  margin-bottom: 30px;
 }
 
 .header__wrapper {
@@ -23,7 +29,6 @@
 
 .header__link {
   margin-right: 15px;
-  font-family: SF Pro Display;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -43,7 +48,6 @@
 }
 
 .header__input {
-  font-family: SF Pro Display;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -56,30 +60,111 @@ background-color: #fff;
 cursor: pointer;
 }
 /* обертка */
-.wrapper {}
+.wrapper {
+  width: 80%;
+  margin: auto;
+}
 /* MAin*/
-.posts {}
+.posts {
+  width: 70%;
+}
 
-.post {}
+.post {
+  background: #FFFFFF;
+  border: 1px solid #E8E8E8;
+  margin-bottom: 30px;
+}
+.post__content{
+  padding: 35px 36px 0 36px;
+}
+.post__title {
+  margin-bottom: 19px;
 
-.post__title {}
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #262626;
+}
 
-.post__text {}
+.post__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #262626;
+  margin-bottom: 10px;
+}
 
-.post__tags {}
+.post__tags {
+  margin-bottom: 22px;
+}
 
-.post__tag {}
+.post__tag {
+  margin-right: 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #BFBFBF;
+  cursor: pointer;
+}
 
-.post__footer {}
+.post__footer {
+  width: 100%;
+  padding: 13px 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FAFAFA;
+  border: 1px solid #E8E8E8;
+}
 
-.post__btns {}
+.post__btn {
+  margin-right: 32px;
+  background-color: #FAFAFA;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #8C8C8C;
+}
+.post__btn span{
+ margin-left: 8px;
+}
+.post__author {
+  display: flex;
+  align-items: center;
+}
 
-.post__author {}
+.post__author-info {
+  margin-right: 9px;
+  display: flex;
+  flex-direction: column;
+  
+  
+}
 
-.post__author-info {}
+.post__author-nikname {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: right;
+  color: #8C8C8C;
+}
 
-.post__author-nikname {}
+.post__author-last-in {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: right;
+  color: #BFBFBF;
+}
 
-.post__author-last-in {}
-
-.post__author-ava {}
+.post__author-ava img {
+  width: 34px;
+  height: 34px;
+  border-radius: 4px;
+}
