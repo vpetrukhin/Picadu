@@ -5,6 +5,7 @@ body{
 
 /* header */
 .header {
+  width: 100%;
   background: #FA8C16;
   padding: 16px 0;
   box-shadow:0px 2px 8px rgba(0, 0, 0, 0.15);
@@ -63,10 +64,13 @@ cursor: pointer;
 .wrapper {
   width: 80%;
   margin: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 /* MAin*/
 .posts {
-  width: 70%;
+  width: 67%;
 }
 
 .post {
@@ -130,7 +134,7 @@ cursor: pointer;
   color: #8C8C8C;
 }
 .post__btn span{
- margin-left: 8px;
+  margin-left: 8px;
 }
 .post__author {
   display: flex;
@@ -153,7 +157,6 @@ cursor: pointer;
   text-align: right;
   color: #8C8C8C;
 }
-
 .post__author-last-in {
   font-style: normal;
   font-weight: normal;
@@ -162,9 +165,139 @@ cursor: pointer;
   text-align: right;
   color: #BFBFBF;
 }
-
 .post__author-ava img {
   width: 34px;
   height: 34px;
   border-radius: 4px;
+}
+
+/* sidebar */
+
+.sidebar {
+  width: 30%;
+}
+
+.sidebar__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FAFAFA;
+  border: 1px solid #E8E8E8;
+  padding: 15px 25px;
+}
+
+.sidebar__user {
+  display: flex;
+  align-items: center;
+}
+.sidebar__ava {
+  margin-right: 17px;
+}
+.sidebar__ava img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.sidebar__nikname {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #595959;
+}
+.sidebar__nav {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.sidebar__link {
+  display: block;
+  padding: 16px 16px 16px 48px;
+  background: #fff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #595959;
+}
+.sidebar__link:hover {
+  background-color: #FFFBE6;
+  color: #FAAD14;
+}
+.active {
+  background-color: #FFFBE6;
+  color: #FAAD14;
+  border-right: 2px solid;
+}
+.sidebar__btn {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 13px 0;
+  background: #FAAD14 url(../img/fire.svg) no-repeat left 70px center;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.sidebar__card {
+  margin-bottom: 20px;
+}
+.card__header {
+  padding: 23px 25px;
+  background: #FAFAFA;
+  border: 1px solid #E8E8E8;
+}
+.card__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #595959;
+}
+.card__body {
+  background: #fff;
+}
+.card__content {
+  padding: 22px 40px 30px 25px;
+}
+.card__subtitle {
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #D48806;
+}
+.card__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #262626;
+}
+.sidebar__promo {
+  width: 100%;
+  height: 260px;
+  display: block;
+  background:#fff url(../img/promo-bg.png) no-repeat center center;
+  border: 1px solid #E8E8E8;
+  position: relative;
+}
+.sidebar__promo::before {
+  content: 'Реклама';
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0 26px;
+  background: #C4C4C4;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
 }
