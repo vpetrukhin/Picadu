@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/normalized.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Picadu</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__wrapper">
+      <a href="index.html" class="header__logo"><img src="img/Pikadu.svg" alt="logo: Picadu"></a>
+      <nav class="header__nav">
+        <a href="#" class="header__link">Свежее</a>
+        <a href="#" class="header__link">Лучшее</a>
+        <a href="#" class="header__link">Горячее</a>
+        <a href="#" class="header__link">Подписки</a>
+      </nav>
+      <div class="header__inputgroup">
+        <input type="search" class="header__input" placeholder="Поиск по сайту">
+        <button class="header__button">
+          <img src="img/search.svg" alt="search">
+        </button>
+      </div>
+      <div class="header__menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrapper">
+
+    <main class="posts">
+      <form action="#" class="posts__form" id="post">
+        <input type="text" class="posts__input" placeholder="Заголовок поста">
+        <textarea name="post-text" id="post-text" class="posts__text" placeholder="Текст вашего поста"></textarea>
+        <div class="posts__btns">
+          <button type="submit" form="post" class="posts__btn btn">Опубликовать пост</button>
+          <input type="file" id="post-video" name="post-file" >
+          <label for="post-video" class="posts__video file">Видео</label>
+          <input type="file" id="post-foto" name="post-file">
+          <label for="post-video" class="posts__foto file">Фото</label>
+        </div>
+      </form>
+    </main>
+
+    <aside class="sidebar">
+      <div class="sidebar__info">
+        <div class="sidebar__user">
+          <a href="#" class="sidebar__ava">
+            <img src="/img/ava3.jpg" alt="avatar">
+          </a>
+          <span class="sidebar__nikname">islamovartem</span>
+        </div>
+        <a href="#" class="sidebar__exit">
+          <img src="/img/exit.svg" alt="">
+        </a>
+      </div>
+      <nav class="sidebar__nav">
+        <a href="#" class="sidebar__link">Ответы</a>
+        <a href="#" class="sidebar__link">Комментарии</a>
+        <a href="#" class="sidebar__link active">Оценки</a>
+        <a href="#" class="sidebar__link">Сохраненное</a>
+        <a href="#" class="sidebar__link">Подписки</a>
+        <a href="#" class="sidebar__link">Заметки</a>
+        <a href="#" class="sidebar__link">Игнор-лист</a>
+      </nav>
+    </aside>
+
+  </div>
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

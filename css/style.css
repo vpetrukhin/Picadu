@@ -254,15 +254,20 @@ cursor: pointer;
 }
 .sidebar__btn {
   width: 100%;
+  display: block;
   margin-bottom: 20px;
   padding: 13px 0;
-  background: #FAAD14 url(../img/fire.svg) no-repeat left 70px center;
+}
+.btn {
+  background: #FAAD14 url(../img/fire.svg) no-repeat left 95px top 17px;
   border-radius: 4px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
+  text-align: center;
   color: #FFFFFF;
+  cursor: pointer;
 }
 .sidebar__card {
   margin-bottom: 20px;
@@ -338,6 +343,75 @@ cursor: pointer;
     height: 2px;
     background: #fff;
   }
+
+  /* newpost.html */
+  .posts__form {
+    display: flex;
+    flex-direction: column;
+  }
+  .posts__input {
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 23px 31px;
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    font-family: "SFProDisplay-Semibold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+  }
+  .posts__text {
+    min-height: 362px;
+    padding: 23px 31px;
+    margin-bottom: 30px;
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #595959;
+  }
+  .posts__btns {
+    display: flex;
+    align-items: center;
+  }
+  .posts__btn {
+    width: 370px;
+    height: 50px;
+    margin-right: 36px;
+  }
+  .file {
+    width: 125px;
+    height: 50px;
+    padding: 13px 16px 13px 30px;
+    text-align: center;
+    background: #FFFFFF;
+    border: 1px solid #FFC53D;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFC53D;
+  }
+  .posts__video {
+    background: #FFFFFF url(../img/video.svg) no-repeat left 16px center;
+    margin-right: 12px;
+  }
+  #post-video {
+    display: none;
+  }
+  .posts__foto {
+    background: #FFFFFF url(../img/foto.svg) no-repeat left 16px center;
+  }
+  #post-foto {
+    display: none;
+  }
+
 
 @media (max-width: 820px) {
   .header__menu-toggle {
@@ -416,6 +490,18 @@ cursor: pointer;
   .sidebar {
     top: 98px;
   }
+  .posts__btns {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .posts__btn {
+    flex-basis: 100%;
+    margin: auto;
+    margin-bottom: 15px;
+    background-position-x: 90px;
+  }
 }
 @media (max-width: 375px) {
   .post__btn {
@@ -423,5 +509,13 @@ cursor: pointer;
   }
   .sidebar {
     width: 100%;
+  }
+  .posts__btn {
+    background-position-x: 85px;
+  }
+}
+@media (max-width: 375px) {
+  .posts__btn {
+    background-position-x: 60px;
   }
 }
